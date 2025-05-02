@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author andre
  */
-public class Martinez_Andrea_SarahiEjercicioPagos {
+public class Martinez_Andrea_SarahiEjercicio3Pagos {
      public static void main (String [] args){
     Scanner texto = new Scanner(System.in);
       texto.useDelimiter("\n");
@@ -25,7 +25,7 @@ public class Martinez_Andrea_SarahiEjercicioPagos {
      int horas = texto.nextInt();
      double He = 0, Hn = 0, pxhe = 0,Pagonormal=0, Pagoextra=0, PagoTotal=0;
      
-      System.out.println("\nCategorías disponibles:");
+      System.out.println("\nCategorias disponibles:");
       System.out.println("1 - $40 por hora extra");
       System.out.println("2 - $50 por hora extra");
       System.out.println("3 - $85 por hora extra");
