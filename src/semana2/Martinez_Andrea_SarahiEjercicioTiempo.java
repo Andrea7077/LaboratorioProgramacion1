@@ -19,7 +19,7 @@ public class Martinez_Andrea_SarahiEjercicioTiempo {
       int segundos = texto.nextInt();
       
       
-      String tiempofinal = ( segundos <= 0) ? "no se permite ese valor " : segundos / 3600 + " horas, " + (segundos % 3600) / 60 + " minutos, " + segundos % 60 + " segundos.";
+      String tiempofinal = ( segundos <= 0) ? "no se permite ese valor " : "Tenemos " + segundos / 3600 + " hora(s), " + (segundos % 3600) / 60 + " minutos, " + segundos % 60 + " segundos.";
  System.out.println(tiempofinal); 
       
      
