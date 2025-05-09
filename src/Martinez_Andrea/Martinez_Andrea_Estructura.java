@@ -35,8 +35,8 @@ public class Martinez_Andrea_Estructura {
                     System.out.print("\nIngrese una cantidad deseada de palabras: ");
                     int cantidadpalabras = texto.nextInt();
 
-                    String palabraMax = ""; // Palabra más larga
-                    String palabraRevesMax = ""; // Su versión al revés
+                    String palabraMax = ""; // la palabra que es mas larga
+                    String palabraRevesMax = ""; // para cuandosea al reves
                     int cantidadPalindromos = 0;
 
                     for (int i = 1; i <= cantidadpalabras; i++) {
@@ -50,7 +50,7 @@ public class Martinez_Andrea_Estructura {
                             System.out.print(letrareves);
                             palabraalreves += letrareves;
                         }
-                        System.out.println(); // Salto de línea
+                        System.out.println();
 
                         if (palabra.equals(palabraalreves)) {
                             System.out.println("Es palindromos");
