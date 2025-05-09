@@ -114,8 +114,56 @@ public class Martinez_Andrea_Estructura {
                 case 4 -> {
                     contadoropcion4++;
                     System.out.println("Ingrese la cantidad de votantes que hay en el pais: ");
+                    int cantidadevotantes = texto.nextInt();
                     
+                    int contadoramarillo =0,contadorrojo=0,contadornegro=0,contadorazul=0, contadorvotonulo=0;
                     
+                    for (int i = 1; i <= cantidadevotantes; i++){
+                        System.out.println("(Azul /  Rojo / Negro / Amrillo)");
+                        System.out.print("Elige por quien deseas votar #" +i+ ": ");
+                        String voto = texto.next();
+                        
+                        switch(voto){
+                            case "Azul" -> {
+                                contadorazul++;
+                            }
+                            case "Rojo" -> {
+                                contadorrojo++;
+                            }
+                            case "Negro" -> {
+                                contadornegro++;
+                            } 
+                            case "Amarillo" -> {
+                                contadoramarillo++;
+                            }
+                            default ->  contadorvotonulo++;
+                             
+                    }
+                       int totalvotosvalidos = contadorazul + contadoramarillo + contadorrojo +contadornegro;
+                       double validos =(double) totalvotosvalidos/cantidadevotantes;
+                    
+                       if(validos>=0.60){
+                         String ganador = "";
+                         int Votos = contadorazul;
+                         
+                         if (contadorrojo > Votos){
+                              Votos = contadorrojo;
+                              ganador = "Rojo";
+                         }
+                         if (contadornegro > Votos){
+                              Votos = contadornegro;
+                              ganador = "Negro";
+                         }    
+                          if (contadoramarillo > Votos){
+                             Votos = contadoramarillo;
+                              ganador = "Amarillo";
+                         }
+                            System.out.println("La planilla ganadora fue: " +ganador);   
+                        
+                       }
+                        else {
+                                    System.out.println("Votacionm fallida");}
+                    }
                 }
 
                 case 5 -> System.out.println("Saliendo del programa...");
