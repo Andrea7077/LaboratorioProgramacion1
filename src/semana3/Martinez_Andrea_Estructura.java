@@ -113,7 +113,9 @@ public class Martinez_Andrea_Estructura {
 
                 case 4 -> {
                     contadoropcion4++;
-                    System.out.println("Simulando votaciones.");
+                    System.out.println("Ingrese la cantidad de votantes que hay en el pais: ");
+                    
+                    
                 }
 
                 case 5 -> System.out.println("Saliendo del programa...");
