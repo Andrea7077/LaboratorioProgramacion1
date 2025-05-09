@@ -88,23 +88,27 @@ public class Martinez_Andrea_Estructura {
 
                 case 3 -> {
                     contadoropcion3++;
-                    System.out.print("Ingrese un numero para comprobar si es primo o no: ");
-                    int numero = texto.nextInt();
-                    boolean Siesprimo = true;
-                    if (numero <= 1) Siesprimo = false;
-                    else {
-                        for (int i = 2; i <= Math.sqrt(numero); i++) {
+                    int numero = random.nextInt(100)+1; //numero aleatorio
+                    int divisiores = 0;
+                     System.out.println("El numero aleatorio es: " +numero);
+                    System.out.print("Todos los divisores son: " );
+                    
+                    
+                    for (int i = 1; i <= numero; i++){
                             if (numero % i == 0) {
-                                Siesprimo = false;
-                                break;
+                                System.out.print(i+" ");
+                                divisiores ++;
+
                             }
                         }
-                    }
-                    if (Siesprimo) {
-                        System.out.println(numero + " es un numero primo.");
+                  
+                    
+                    if (divisiores==2) {
+                        System.out.println("\n" +numero + "  es un numero primo.");
                     } else {
-                        System.out.println(numero + " no es un numero primo.");
+                        System.out.println("\n" + numero + " no es un numero primo.");
                     }
+                   
                 }
 
                 case 4 -> {
