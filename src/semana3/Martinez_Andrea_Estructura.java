@@ -31,17 +31,17 @@ public class Martinez_Andrea_Estructura {
 
             switch (opcion) {
                 case 1 -> {
-                    contadoropcion1++;
+                    contadoropcion1++; //con esto incrementamos el contador de la opcion 1
                     System.out.print("\nIngrese una cantidad deseada de palabras: ");
                     int cantidadpalabras = texto.nextInt();
 
-                    String palabraMax = ""; // la palabra que es mas larga
-                    String palabraRevesMax = ""; // para cuandosea al reves
-                    int cantidadPalindromos = 0;
+                    String palabraMax = ""; // guardamos la palabra que es mas larga
+                    String palabraRevesMax = ""; // para cuando sea al reves
+                    int cantidadPalindromos = 0; // para los palindromos
 
                     for (int i = 1; i <= cantidadpalabras; i++) {
                         System.out.print("\nPalabra #" + i + ": ");
-                        String palabra = texto.next().toLowerCase();
+                        String palabra = texto.next().toLowerCase(); //ingresamos la palabra y convierte en minuscula
                         String palabraalreves = "";
 
                         System.out.print("Al reves: ");
@@ -70,7 +70,7 @@ public class Martinez_Andrea_Estructura {
                 }
 
                 case 2 -> {
-                    contadoropcion2++;
+                    contadoropcion2++; //con esto incrementamos el contador de la opcion 2
                     int sumaDivisores = 0;
                     System.out.print("Ingrese un numero para comprobar si es perfecto: ");
                     int numero = texto.nextInt();
