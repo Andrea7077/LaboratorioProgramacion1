@@ -171,6 +171,12 @@ public class Martinez_Andrea_Estructura {
                 default -> System.out.println("Opción inválida. Intenta de nuevo.");
             }
         } while (opcion != 5);
+        
+        System.out.println("\n--- OPCIONES UTILIZADAS ---");
+            System.out.println("Veces que se uso Palabra Alreves " +contadoropcion1);
+            System.out.println("Veces que se uso Numero perfecto "  +contadoropcion2);
+            System.out.println("Veces que se uso Primos " +contadoropcion3);
+            System.out.println("Veces que se uso Votaciones " +contadoropcion4);
 
         texto.close();
     }
