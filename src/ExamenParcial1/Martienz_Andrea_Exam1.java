@@ -129,16 +129,17 @@ public class Martienz_Andrea_Exam1 {
                     boolean adivinar = true;
                     System.out.println("\n== Adivinar ==");
                     int intentosmax = 10,
-                     intento = 1;
+                     intento = 0;
                     int numerorandom = random.nextInt(100) + 1;
                     System.out.println("Intenta adivinar el numero entre el 1 y 100! (Tienes 10 intentos)");
 
                     while (adivinar==true) {
                         while (intento < intentosmax) {
+                            intento++;
+
                             System.out.println("\nIntento: " + intento + "/10");
                             System.out.print("Ingrese el que piensas que es el numero: ");
 
-                            intento++;
                             int numerocomparar = texto.nextInt();
 
                             if (numerorandom > numerocomparar) {
@@ -154,11 +155,16 @@ public class Martienz_Andrea_Exam1 {
                                 adivinar = false;
                             }
                             if(intento >= intentosmax){
+                                System.out.println("\nEl numero era: " +numerorandom);
                                 System.out.println("Oh no! Parece que tus intentos se terminaron");
                                 System.out.println("suerte a la proxima.");
                             }
                         }
-                               
+                        System.out.print("\nDesea intentarlo de nuevo? (Si/No): ");
+                        sino = texto.next().toLowerCase();
+                        if (!sino.equals("si")) {
+                            adivinar = false;
+                        }
 
                     }
 
