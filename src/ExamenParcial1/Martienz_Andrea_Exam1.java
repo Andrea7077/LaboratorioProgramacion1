@@ -56,7 +56,10 @@ public class Martienz_Andrea_Exam1 {
                     System.out.print("Ingrese el mensaje a cifrar: ");
                     String mensaje = texto.next().toLowerCase();
                     boolean cifradobo = false;
-                    System.out.println("\nElije una de las siguientes opciones:");
+                    
+                    
+                    while(!cifradobo){
+                     System.out.println("\nElije una de las siguientes opciones:");
                     System.out.println("1. Cifrado");
                     System.out.println("2. desifrado");
                     System.out.println("3. Salir al menu principal");
@@ -64,16 +67,13 @@ public class Martienz_Andrea_Exam1 {
                     int opcioncifrado = texto.nextInt();
                     
                     
-                    while(cifradobo)
-                        
-                    
                     if (opcioncifrado == 1 || opcioncifrado == 2) {
                         System.out.println("== Cifrado ==");
-                        String cifrado = texto.next();
                         String respuesta = texto.next();
 
-                        for (int i = 0; i > cifrado.length(); i++) {
-                            char j = cifrado.charAt(i);
+                        for (int i = 0; i > mensaje.length(); i++) {
+                            char j = mensaje.charAt(i);
+                            
                             if (j > 'a' && j < 'z') {
                                 respuesta += (char) ('z' - (j - 'a'));
                             } else {
@@ -89,7 +89,7 @@ public class Martienz_Andrea_Exam1 {
                     if(opcion==2 && cifradobo==true){
                         System.out.println("Mensaje desifrado " );
                     }
-                    }
+                    }}
                     
                     break;
 
