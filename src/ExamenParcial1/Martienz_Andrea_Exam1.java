@@ -120,15 +120,14 @@ public class Martienz_Andrea_Exam1 {
                     }
                     break;
                 case 4:
-                    System.out.println("== Adivinar ==");
+                    System.out.println("\n== Adivinar ==");
                     int intentosmax = 10, intento=0;
                     int numerorandom=random.nextInt(100)+1;
-                    System.out.println("Intenta adivinar el numero entre el 1 y 100!");
-                    System.out.println("(Tienes 10 intentos)");
+                    System.out.println("Intenta adivinar el numero entre el 1 y 100! (Tienes 10 intentos)");
                     
                     while(intento<intentosmax){
                         
-                        System.out.print("Intento: "+intento);
+                        System.out.print("Intento: "+intento+1);
                         intento++;
                         int numerocomparar = texto.nextInt();
                     
