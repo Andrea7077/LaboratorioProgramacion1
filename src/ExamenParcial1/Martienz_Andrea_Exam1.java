@@ -58,7 +58,6 @@ public class Martienz_Andrea_Exam1 {
                     boolean cifradobo = false;
                     
                     
-                OUTER:
                 while (!cifradobo) {
                     System.out.println("\nElije una de las siguientes opciones:");
                     System.out.println("1. Cifrado");
@@ -87,7 +86,7 @@ public class Martienz_Andrea_Exam1 {
                             break;
                         case 2:
                             System.out.println("== desifrado ==");
-                    String respuestadesifrado = "";
+                       String respuestadesifrado = "";
                             for (int i = 0; i < mensaje.length(); i++) {
                                 char j = mensaje.charAt(i);
                                 
@@ -103,7 +102,7 @@ public class Martienz_Andrea_Exam1 {
                         case 3:
                             System.out.println("Saliento al menu principal");
                             cifradobo = true;
-                            break OUTER;
+                            break;
                         default:
                             System.out.println("Opcion no valida.");
                             break;
