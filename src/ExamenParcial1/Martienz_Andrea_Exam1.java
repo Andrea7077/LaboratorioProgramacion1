@@ -52,6 +52,45 @@ public class Martienz_Andrea_Exam1 {
                     break;
                 case 2:
                     System.out.println("\n== Clave ==");
+
+                    System.out.print("Ingrese el mensaje a cifrar: ");
+                    String mensaje = texto.next().toLowerCase();
+                    boolean cifradobo = false;
+                    System.out.println("\nElije una de las siguientes opciones:");
+                    System.out.println("1. Cifrado");
+                    System.out.println("2. desifrado");
+                    System.out.println("3. Salir al menu principal");
+                    System.out.print("Seleccione la opcion: ");
+                    int opcioncifrado = texto.nextInt();
+                    
+                    
+                    while(cifradobo)
+                        
+                    
+                    if (opcioncifrado == 1 || opcioncifrado == 2) {
+                        System.out.println("== Cifrado ==");
+                        String cifrado = texto.next();
+                        String respuesta = texto.next();
+
+                        for (int i = 0; i > cifrado.length(); i++) {
+                            char j = cifrado.charAt(i);
+                            if (j > 'a' && j < 'z') {
+                                respuesta += (char) ('z' - (j - 'a'));
+                            } else {
+                                respuesta += j;
+                            }
+                        }
+                        cifradobo = true;
+                    
+                    if(opcion==1){
+                        System.out.println("Mensaje cifrado " +respuesta);
+                    }
+                    
+                    if(opcion==2 && cifradobo==true){
+                        System.out.println("Mensaje desifrado " );
+                    }
+                    }
+                    
                     break;
 
                 case 3:
@@ -133,7 +172,7 @@ public class Martienz_Andrea_Exam1 {
                     int numerorandom = random.nextInt(100) + 1;
                     System.out.println("Intenta adivinar el numero entre el 1 y 100! (Tienes 10 intentos)");
 
-                    while (adivinar==true) {
+                    while (adivinar == true) {
                         while (intento < intentosmax) {
                             intento++;
 
@@ -150,19 +189,18 @@ public class Martienz_Andrea_Exam1 {
                             }
 
                             if (numerocomparar == numerorandom) {
-                                 System.out.println("Ese era el numero, acertaste! Felicidades!");
-                                System.out.println("Adivinaste el numero en "+intento+" intentos");
+                                System.out.println("Ese era el numero, acertaste! Felicidades!");
+                                System.out.println("Adivinaste el numero en " + intento + " intentos");
                                 adivinar = false;
                                 break;
                             }
-                            if(intento >= intentosmax){
-                                System.out.println("\nEl numero era: " +numerorandom);
+                            if (intento >= intentosmax) {
+                                System.out.println("\nEl numero era: " + numerorandom);
                                 System.out.println("Oh no! Parece que tus intentos se terminaron");
                                 System.out.println("suerte a la proxima.");
-                                adivinar=false;
+                                adivinar = false;
                             }
                         }
-                      
 
                     }
 
