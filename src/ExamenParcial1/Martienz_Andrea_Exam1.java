@@ -153,18 +153,16 @@ public class Martienz_Andrea_Exam1 {
                                  System.out.println("Ese era el numero, acertaste! Felicidades!");
                                 System.out.println("Adivinaste el numero en "+intento+" intentos");
                                 adivinar = false;
+                                break;
                             }
                             if(intento >= intentosmax){
                                 System.out.println("\nEl numero era: " +numerorandom);
                                 System.out.println("Oh no! Parece que tus intentos se terminaron");
                                 System.out.println("suerte a la proxima.");
+                                adivinar=false;
                             }
                         }
-                        System.out.print("\nDesea intentarlo de nuevo? (Si/No): ");
-                        sino = texto.next().toLowerCase();
-                        if (!sino.equals("si")) {
-                            adivinar = false;
-                        }
+                      
 
                     }
 
