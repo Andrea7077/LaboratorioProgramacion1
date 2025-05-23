@@ -52,65 +52,56 @@ public class Martienz_Andrea_Exam1 {
                     break;
                 case 2:
                     System.out.println("\n== Clave ==");
-
                     System.out.print("Ingrese el mensaje a cifrar: ");
-                    String mensaje = texto.next().toLowerCase();
+                    texto.nextLine();
+                    String mensaje = texto.nextLine();
+                    
                     boolean cifradobo = false;
+                   
                     
-                    
-                while (!cifradobo) {
-                    System.out.println("\nElije una de las siguientes opciones:");
-                    System.out.println("1. Cifrado");
-                    System.out.println("2. desifrado");
-                    System.out.println("3. Salir al menu principal");
-                    System.out.print("Seleccione la opcion: ");
-                    int opcioncifrado = texto.nextInt();
 
-                    
-                    switch (opcioncifrado) {
-                        
-                        case 1: System.out.println("== Cifrado ==");
-                         String respuesta = "";
-                            for (int i = 0; i < mensaje.length(); i++) {
-                                char j = mensaje.charAt(i);
+                    while (!cifradobo) {
+                        System.out.println("\nElije una de las siguientes opciones:");
+                        System.out.println("1. Cifrado");
+                        System.out.println("2. desifrado");
+                        System.out.println("3. Salir al menu principal");
+                        System.out.print("Seleccione la opcion: ");
+                        int opcioncifrado = texto.nextInt();
+
+                        switch (opcioncifrado) {
+
+                            case 1:
+                                System.out.println("== Cifrado ==");
+                                String respuesta = "";
+                                for (int i = 0; i < mensaje.length(); i++) {
+                                    char j = mensaje.charAt(i);
+
+                                    if (j >= 'a' && j <= 'z') {
+                                        respuesta += (char) ('z' - (j - 'a'));
+                                    } else {
+                                        respuesta += j;
+                                    }
+                                }
+                                System.out.println("Mensaje cifrado: " + respuesta);
+
+                                break;
+                            case 2:
                              
 
-                                if (j > 'a' && j < 'z') {
-                                    respuesta += (char) ('z' - (j - 'a'));
-                                } else {
-                                    respuesta += j;
-                                }
-                            }   cifradobo = true;
-                           System.out.println("Mensaje cifrado " +respuesta);
+                                System.out.println("Mensaje desifrado: " + mensaje);
 
-                            break;
-                        case 2:
-                            System.out.println("== desifrado ==");
-                       String respuestadesifrado = "";
-                            for (int i = 0; i < mensaje.length(); i++) {
-                                char j = mensaje.charAt(i);
-                                
-                                if (j > 'a' && j < 'z') {
-                                    respuestadesifrado += (char) ('z' - (j - 'a'));
-                                } else {
-                                    respuestadesifrado += j;
-                                }
-                            }   cifradobo = true;
-                           
-                                System.out.println("Mensaje desifrado " +respuestadesifrado);
-                                   break;
-                        case 3:
-                            System.out.println("Saliento al menu principal");
-                            cifradobo = true;
-                            break;
-                        default:
-                            System.out.println("Opcion no valida.");
-                            break;
+                                break;
+                            case 3:
+                                System.out.println("Saliento al menu principal");
+                                cifradobo = true;
+                                break;
+                            default:
+                                System.out.println("Opcion no valida.");
+                                break;
+                        }
                     }
-                }
-                    
-                    break;
 
+                    break;
 
                 case 3:
                     System.out.println("\n== Piedra Papel o Tijera ==");
