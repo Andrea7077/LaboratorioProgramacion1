@@ -21,6 +21,7 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
 
         AHORCADO.setVisible(false);
         CAMBIARPALABRA.setVisible(false);
+        jLabel11.setVisible(false);
 
     }
 
@@ -47,7 +48,11 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
         volver1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        oculta = new javax.swing.JLabel();
+        palabrarandomoculta = new javax.swing.JLabel();
+        denuevo = new javax.swing.JLabel();
+        numintentos = new javax.swing.JLabel();
         CAMBIARPALABRA = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -161,36 +166,52 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Oportunidad:");
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel10.setText("     ");
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        oculta.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        oculta.setText("jLabel12");
+
+        palabrarandomoculta.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        palabrarandomoculta.setText("jLabel12");
+
+        numintentos.setText("jLabel10");
 
         javax.swing.GroupLayout AHORCADOLayout = new javax.swing.GroupLayout(AHORCADO);
         AHORCADO.setLayout(AHORCADOLayout);
         AHORCADOLayout.setHorizontalGroup(
             AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AHORCADOLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(volver1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AHORCADOLayout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AHORCADOLayout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addComponent(jLabel2))
-                    .addGroup(AHORCADOLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
+                        .addGap(25, 25, 25)
+                        .addComponent(volver1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(AHORCADOLayout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(letra, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton2))
+                                .addGap(58, 58, 58)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(AHORCADOLayout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(122, 122, 122)
+                                .addComponent(jLabel2))
+                            .addGroup(AHORCADOLayout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addGroup(AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(AHORCADOLayout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(letra, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton2))
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(AHORCADOLayout.createSequentialGroup()
+                                        .addComponent(jLabel7)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(numintentos, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(denuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(AHORCADOLayout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addGroup(AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(palabrarandomoculta, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(oculta, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(99, Short.MAX_VALUE))
         );
         AHORCADOLayout.setVerticalGroup(
@@ -204,17 +225,25 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(14, 14, 14)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel11)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(letra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(233, Short.MAX_VALUE))
+                .addGroup(AHORCADOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(numintentos))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(denuevo)
+                .addGap(28, 28, 28)
+                .addComponent(oculta)
+                .addGap(18, 18, 18)
+                .addComponent(palabrarandomoculta)
+                .addContainerGap(139, Short.MAX_VALUE))
         );
 
         CAMBIARPALABRA.setPreferredSize(new java.awt.Dimension(572, 363));
@@ -289,13 +318,13 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    String[] palabra = {"HONDURAS","AMOR","BALON","SECADORA","CUADERNO","FLOR","COMPUTADORA","CANASTA","TELEFONO","ENTRENADOR"};
+    String[] palabra = {"HONDURAS", "AMOR", "BALON", "SECADORA", "CUADERNO", "FLOR", "COMPUTADORA", "CANASTA", "TELEFONO", "ENTRENADOR"};
     Scanner texto = new Scanner(System.in);
     Random random = new Random();
-    String palabraoculta = ""; 
-    
-    
+    String palabraoculta = "";
+    String palabraactual = "";
+    int contador = 5;
+
     private void cambiarpalabraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cambiarpalabraActionPerformed
         CAMBIARPALABRA.setVisible(true);
         MENU.setVisible(false);
@@ -308,6 +337,17 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
         CAMBIARPALABRA.setVisible(false);
 
         AHORCADO.setVisible(true);
+        int aleatorio = random.nextInt(1, 11);
+
+        palabraactual = palabra[aleatorio];
+        palabraoculta = "";
+
+        for (int i = 0; i < palabraactual.length(); i++) {
+            palabraoculta += ("_" + " ");
+        }
+        oculta.setText(palabraactual);
+        palabrarandomoculta.setText(palabraoculta);
+        numintentos.setText("" + contador);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_ahorcadoActionPerformed
@@ -324,19 +364,39 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
     }//GEN-LAST:event_volver1ActionPerformed
 
     private void volver2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volver2ActionPerformed
-            CAMBIARPALABRA.setVisible(false);
-            MENU.setVisible(true);
+        CAMBIARPALABRA.setVisible(false);
+        MENU.setVisible(true);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_volver2ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-        int contadorintentos = 0;
-        int  oculta = random.nextInt(palabra.length);
-        
-        jLabel10.setInt(oculta);
-        //texto = letra.
+        String letraintento = letra.getText().toUpperCase();
+        if (letraintento.length() != 1) {
+            jLabel11.setText("Solo puede ingresar un caracter");
+        } else if (letraintento.length() == 1) {
+
+            String palabraocultaactual = oculta.getText();
+            String[] palabrarandomoculta = palabraocultaactual.split(" ");
+
+            for (int i = 0; i < palabraactual.length(); i++) {
+                if (String.valueOf(palabraactual.charAt(i)).equals(letraintento)) {
+                    palabrarandomoculta[i] = letraintento;
+                    numintentos.setText("" + contador);
+                    denuevo.setVisible(false);
+                    denuevo.setText("Le pegaste a una letra!");
+
+                } else {
+                    contador--;
+                    numintentos.setText("" + contador);
+                    denuevo.setText("Intentelo de nuevo");
+                }
+
+            }
+
+        }
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -383,9 +443,10 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
     private javax.swing.JPanel MENU;
     private javax.swing.JButton ahorcado;
     private javax.swing.JButton cambiarpalabra;
+    private javax.swing.JLabel denuevo;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -396,6 +457,9 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private java.awt.Label label1;
     private javax.swing.JTextField letra;
+    private javax.swing.JLabel numintentos;
+    private javax.swing.JLabel oculta;
+    private javax.swing.JLabel palabrarandomoculta;
     private javax.swing.JButton volver1;
     private javax.swing.JButton volver2;
     // End of variables declaration//GEN-END:variables
