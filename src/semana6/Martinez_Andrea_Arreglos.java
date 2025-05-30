@@ -335,7 +335,7 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
     private void ahorcadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ahorcadoActionPerformed
         MENU.setVisible(false);
         CAMBIARPALABRA.setVisible(false);
-
+oculta.setVisible(false);
         AHORCADO.setVisible(true);
         int aleatorio = random.nextInt(1, 11);
 
@@ -375,25 +375,29 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
         String letraintento = letra.getText().toUpperCase();
         if (letraintento.length() != 1) {
             jLabel11.setText("Solo puede ingresar un caracter");
-        } else if (letraintento.length() == 1) {
+            return;
+
+        }  
 
             String palabraocultaactual = oculta.getText();
-            String[] palabrarandomoculta = palabraocultaactual.split(" ");
+            String[] palabrarandom = palabrarandomoculta.split(" ");
 
             for (int i = 0; i < palabraactual.length(); i++) {
                 if (String.valueOf(palabraactual.charAt(i)).equals(letraintento)) {
-                    palabrarandomoculta[i] = letraintento;
+                    palabrarandom[i] = letraintento;
                     numintentos.setText("" + contador);
                     denuevo.setVisible(false);
                     denuevo.setText("Le pegaste a una letra!");
 
-                } else {
+                }else{
                     contador--;
                     numintentos.setText("" + contador);
-                    denuevo.setText("Intentelo de nuevo");
-                }
+                    denuevo.setText("Maal, intente de nuevo");
 
-            }
+                }
+                
+
+            
 
         }
 
