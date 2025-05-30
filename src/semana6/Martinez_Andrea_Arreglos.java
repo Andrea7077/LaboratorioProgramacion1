@@ -335,7 +335,7 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
     private void ahorcadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ahorcadoActionPerformed
         MENU.setVisible(false);
         CAMBIARPALABRA.setVisible(false);
-oculta.setVisible(false);
+oculta.setVisible();
         AHORCADO.setVisible(true);
         int aleatorio = random.nextInt(1, 11);
 
@@ -380,11 +380,11 @@ oculta.setVisible(false);
         }  
 
             String palabraocultaactual = oculta.getText();
-            String[] palabrarandom = palabrarandomoculta.split(" ");
+            String[] palabrarandomoculta = palabraocultaactual.split(" ");
 
             for (int i = 0; i < palabraactual.length(); i++) {
                 if (String.valueOf(palabraactual.charAt(i)).equals(letraintento)) {
-                    palabrarandom[i] = letraintento;
+                    palabrarandomoculta[i] = letraintento;
                     numintentos.setText("" + contador);
                     denuevo.setVisible(false);
                     denuevo.setText("Le pegaste a una letra!");
