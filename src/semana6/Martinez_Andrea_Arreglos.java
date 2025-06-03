@@ -335,7 +335,6 @@ public class Martinez_Andrea_Arreglos extends javax.swing.JFrame {
     private void ahorcadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ahorcadoActionPerformed
         MENU.setVisible(false);
         CAMBIARPALABRA.setVisible(false);
-oculta.setVisible();
         AHORCADO.setVisible(true);
         int aleatorio = random.nextInt(1, 11);
 
